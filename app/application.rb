@@ -15,8 +15,6 @@ class Application
     
     resp.write "Good Afternoon!" if wrote_greetings == false
     
-    resp.write "Good Afternoon!"
-    
     #if time.hour < 12
     #  resp.write "Good Morning!"
     #elsif time.hour == 12
