@@ -8,14 +8,20 @@ class Application
     
     wrote_greetings = false
     
-    if time.hour < 12
-      resp.write "Good Morning!"
-      wrote_greetings = true
-    elsif time.hour >=12 
-      resp.write "Good Afternoon!"
+    if time.hour >= 12
+      "Good Afternoon!"
     end
     
-    resp.write "Good Afternoon!" if wrote_greetings == false
+    
+    
+    #if time.hour < 12
+    #  resp.write "Good Morning!"
+    #  wrote_greetings = true
+    #elsif time.hour >=12 
+    #  resp.write "Good Afternoon!"
+    #end
+    
+    #resp.write "Good Afternoon!" if wrote_greetings == false
     
     #if time.hour < 12
     #  resp.write "Good Morning!"
