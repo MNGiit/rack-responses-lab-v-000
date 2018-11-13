@@ -9,7 +9,7 @@ class Application
     wrote_greetings = false
     
     if time.hour >= 12
-      "Good Afternoon!"
+      resp.write "Good Afternoon!"
     end
     
     
