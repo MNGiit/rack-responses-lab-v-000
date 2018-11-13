@@ -6,6 +6,15 @@ class Application
     
     time = Time.new
     
+    wrote_greetings = false
+    
+    if time.hour < 12
+      resp.write "Good Morning!"
+      wrote_greetings = true
+    end
+    
+    resp.write "Good Afternoon!" if wrote_greetings == false
+    
     resp.write "Good Afternoon!"
     
     #if time.hour < 12
